@@ -1,0 +1,409 @@
+% !TEX program = pdflatex
+
+% Preamble {{{
+\documentclass[9pt]{resumetemplate}
+\usepackage{enumitem}
+\usepackage{amsmath,amssymb,amsfonts}
+%\setitemize{itemsep=0.0pt,itemindent=-4pt}
+\renewcommand{\labelenumi}{\tiny$\blacksquare$}
+ \setlist[enumerate]{
+   %labelsep=4pt,
+   itemsep=0.0pt,
+   topsep=0.0pt,
+   %labelindent=10\parindent,
+   %itemindent=5pt,
+   leftmargin=10pt,
+   %before=10pt%\setlength{\listparindent}{-\leftmargin},
+ }
+% }}}
+
+\begin{document}
+
+% Title {{{
+\begin{minipage}[t]{0.45\textwidth}
+	\vspace{-\baselineskip}
+	% Required for vertically aligning minipages
+	
+	\colorbox{black}{{\HUGE\textcolor{white}{\textbf{\MakeUppercase{% first name
+	  Marcos%
+	}}}}}
+	\colorbox{black}{{\HUGE\textcolor{white}{\textbf{\MakeUppercase{% last name
+	  Romero Lamas%
+	}}}}}
+	
+	\vspace{6pt}
+	
+	{\huge Physicist} % Career or current job title
+\end{minipage}
+\vspace{0.5cm}
+% }}}
+
+% Introduction {{{
+\cvsect{Who Am I?}
+
+\begin{minipage}[t]{0.55\textwidth}
+	\vspace{-\baselineskip}
+	
+	% SOME STUFF
+	I am currently working in the analysis of LHC$b$ data to measureme the weak 
+	$\phi_s$ phase, testing the Standard Model to its limits. This analysis 
+	requires a proper selection of the events (which we do using different ML 
+	algorithms) and the estimation of different corrections needed to determine
+	the most precise value of $\phi_s$ to date. I use python as an interface to
+	cuda-C/openCL kernels thus enabling python to use the HPC capabilities of
+	GPUs. This is the core of my PhD thesis, which I expect to finish by the end
+	of 2021.
+
+\end{minipage}
+% Whitespace between
+\hfill
+%
+\begin{minipage}[t]{0.4\textwidth} % 50% of the page for the skills bar chart
+	\vspace{-1cm} % Required for vertically aligning minipages
+	\icon{MapMarker}{9}{
+	\begin{minipage}{\textwidth}
+	\phantom{Torreira de Arriba 19\\
+	15701, Santiago de Compostela\\}
+	Torreira de Arriba 19\\
+	15701, Santiago de Compostela\\
+  Spain
+	\end{minipage}}\\
+	\icon{Phone}{9}{+34 600391520}\\
+	\icon{At}{9}{\href{mailto:marromlam@gmail.com}{marromlam@gmail.com}}\\	
+	\icon{Github}{9}{\href{https://github.com/marromlam}{github.com/marromlam}}\\
+  \icon{Linkedin}{9}{\href{www.linkedin.com/in/marcos-romero-lamas}{marcos-romero-lamas}}\\
+
+	% \icon{Globe}{12}{\href{https://alyx.vance.me}{alyx.vance.me}}\\
+	% \icon{Twitter}{12}{\href{https://twitter.com/@alyxvance}{@alyxvance}}\\
+	% \begin{barchart}{5.5}
+	% 	\baritem{JavaScript}{60}
+	% 	\baritem{PHP}{100}
+	% 	\baritem{SASS/LESS}{70}
+	% 	\baritem{Bootstrap}{70}
+	% 	\baritem{Git}{40}
+	% 	\baritem{LaTeX}{60}
+	% \end{barchart}
+\end{minipage}
+
+
+% \begin{center}
+% 	\bubbles{5/Eclipse, 6/git, 4/Office, 3/Inkscape, 3/Blender}
+% \end{center}
+
+% }}}
+
+% Experience {{{
+\cvsect{Experience}
+
+\begin{entrylist}
+  \entry
+		{Oct. 18 -- \emph{present}}
+		{Research Assistant}
+		{\href{https://igfae.usc.es/igfae/}{Instituto Galego de Física de Altas Enerxías (IGFAE)}}
+    {%
+		\vspace{-3mm}
+    \begin{enumerate}
+      \item Analysis of $B_s^0 \rightarrow J\!/\psi K^+ K^-$ samples to
+			determine the world's best measurement of $\phi_s$ oscillation phase of 
+			$B_{s}^0$ neutral meson.
+			\item Monte Carlo liaison of Charmonia working group simulations. \hfill
+			\emph{May 2019 -- (May 2021)}
+    \end{enumerate}
+    }
+  \entry
+    {Jan. 17 -- Jul. 17\\\footnotesize{part time}}
+    {Research Assistant}
+    {\href{https://igfae.usc.es/igfae/}{Instituto Galego de Física de Altas Enerxías (IGFAE)}}
+    {%
+		\vspace{-3mm}
+    \begin{enumerate}
+      \item Study of $\mathcal{T}$--odd asymmetries (time reversal) in the
+			$B_s^0 \rightarrow K^+ \pi^- K^- \pi^+$ decay through the spin resonance
+			of 1 $K{}^{*0}(892)$.
+    \end{enumerate}
+    }
+\end{entrylist}
+% }}}
+
+% Education {{{
+\cvsect{Education}
+
+\begin{entrylist}
+	\entry
+		{Oct. 18 -- \emph{present}}
+		{\href{https://igfae.usc.es/igfae/es/doctorado/}{PhD in Nuclear and Particle
+		Physics}}
+		{Universidade de Santiago de Compostela (USC)}
+		{}
+	\entry
+		{Sep. 17 -- Jul. 19}
+		{\href{http://m2i.es/en/}{MSc in Industrial Mathematics}}
+		{Universidad Politécnica de Madrid (UPM)}
+		{Modelling Specialization: Finite Elements, Stochastic Calculus,
+		Finances Modeling, Multidisciplinar Design Optimization, Numerical Methods,
+		Modelling in Biomedicine, Perturbation Theory... \\
+		Dissertation: \emph{GPU--based time--dependent
+		angular analysis of $B_s^0 \rightarrow J/\psi K^+K^-$ decay and systematic
+		uncertainty validation.}}
+	\entry
+		{Sep.13 -- Jul. 17}
+		{\href{https://www.usc.es/es/centros/fisica/}{Bachelor of Science in
+		Physics}}
+		{Universidade de Santiago de Compostela (USC)}
+		{High Energy Physics Specialization: QFT, Complex Analysis, Algebra, 
+		Differential Geometry, Partial Derivatives Equations, Classical and 
+		Continuum mediums Mecanics, Solid State, Electronics...\\
+		Dissertation: \emph{Study of $T$--odd observables: $B_s^0$--meson decay in
+		two neutral vectorial mesons.}}
+\end{entrylist}
+% }}}
+
+% Complementary Education {{{
+\cvsect{Complementary Education}
+
+\begin{entrylist}
+  \entry
+	  {October 2020\\\footnotesize{\emph{virtual}}}
+		{\href{https://indico.cern.ch/event/865287/}{Programming and environments
+		for parallelism}}
+		{CERN openlab}
+		{}
+  \entry
+	  {June 2020\\\footnotesize{Santiago de Compostela}}
+		{\href{https://indico.cern.ch/event/865287/}{Neural Networks: Applications
+		to High Energy Physics and Industry}}
+		{USC}
+		{}
+  \entry
+	  {January 2020\\\footnotesize{Santiago de Compostela}}
+		{\href{https://indico.cern.ch/event/865287/}{Introduction to Quantum
+		Computing}}
+		{USC}
+		{}
+  \entry
+	  {October 2019\\\footnotesize{Barcelona}}
+		{\href{https://indico.ific.uv.es/event/3825/}{1st COMCHA School}}
+		{Universitat Ramon--Llul}
+		{%
+		\vspace{-3mm}
+    \begin{enumerate}
+      \item Lectures on Artificial Intelligence and Machine Learning
+      \item NVIDIA Deep Learning Institute Certificate: Fundamentals of
+			Accelerated Computing with CUDA C/C++
+    \end{enumerate}
+    }
+  \entry
+	  {Jul. 18 -- Aug. 18\\\footnotesize{Genève}}
+		{\href{https://home.cern/summer-student-programme}{CERN Summer School}}
+		{Conseil Européen pour la Recherche Nucléaire}
+		{%
+		\vspace{-3mm}
+    \begin{enumerate}
+      \item Analysis of LHC$b$ data to make precision measurements on ${K^+}$
+			mass.
+    \end{enumerate}
+    }
+%  \entry
+%	  {July 2013\\\footnotesize{Santiago de Compostela}}
+%		{First Certificate in English (B2)}
+%		{The British Council}
+%		{}
+\end{entrylist}
+% }}}
+
+% Talks at conferences {{{
+\cvsect{Talks at conferences}
+In addition to many talks given at B2CC and LHCb Simulation working groups
+weekly meetings, I gave talks at some national and international
+conferences.\\[3mm]
+
+\begin{entrylist}
+  \entry
+	  {October 2020\\\footnotesize{\emph{virtual}}}
+		{\href{https://indico.ific.uv.es/event/3825/}{Acceptances and resolutions in
+		$B_s^0 \rightarrow J/\!\psi \phi$}}
+		{Analysis and Software week}{}
+  \entry
+	  {October 2019\\\footnotesize{Oviedo}}
+		{\href{https://indico.ific.uv.es/event/3825/}{Latest LHCb results on
+		$\phi_s$}}
+		{CPAN XI days}{}
+  \entry
+	  {September 2019\\\footnotesize{Perugia}}
+		{\href{https://indico.ific.uv.es/event/3825/}{CP violation in beauty and
+		charm at LHCb}}
+		{KAON 2019}{}
+\end{entrylist}
+% }}}
+
+% Outreach {{{
+\cvsect{Outreach}
+
+\begin{entrylist}
+  \entry{March 2021\\\footnotesize{\emph{virtual}}}
+    {CMS Masterclass 2021}
+    {USC in collaboration with CERN}
+    {% Description
+    Speaker and instructor during the laboratory sessions as well as
+    organiser of the event.
+    }
+  \entry{March 2020\\\footnotesize{Santiago de Compostela}}
+    {CMS Masterclass 2020}
+    {USC in collaboration with CERN}
+    {% Description
+    Speaker and instructor during the laboratory sessions as well as
+    organiser of the event.
+    }
+  \entry
+	  {July 2019\\\footnotesize{Santiago de Compostela}}
+		{Summer Scientific Campus}
+		{USC in collaboration with the Spanish Government}
+		{Speaker and instructor during the laboratory sessions.}
+  \entry
+	  {April 2019\\\footnotesize{Santiago de Compostela}}
+    {CMS Masterclass 2019}
+    {USC in collaboration with CERN}
+    {% Description
+    Speaker and instructor during the laboratory sessions.
+    }
+\end{entrylist}
+% }}}
+
+% Publications {{{
+\cvsect{Publications}
+%\nocite{*}
+
+\begin{entrylist}
+  \entry
+	  {May 19 - \emph{present}\\\footnotesize{Genève}}
+    {LHC$b$ publications}
+		{
+		\href{https://labs.inspirehep.net/authors/1755373}{Inspire}  /  
+    \href{http://cds.cern.ch/record/2627634/}{CERN Document Server}
+		}
+    {% Description
+    To date, \today, I have participated in 
+		% \arabic{no_journals} 
+		55 scientific papers, where having a main role in: \footnotesize
+    \begin{enumerate}
+    %  \item \protect\citetitle{Aaij:2019vot},
+		%	      \href{https://arxiv.org/abs/1906.08356}
+		%				{arXiv:\citefield{Aaij:2019vot}{eprint}}
+    \item \textbf{Updated measurement of time-dependent CP-violating observables
+		in $B_s^0 \rightarrow J/\!\phi K^+ K^-$ decays},
+		    \href{https://arxiv.org/pdf/1906.08356}
+				{arXiv:1906.08356v4}
+    \end{enumerate}
+    }
+  \entry{December 2020\\\footnotesize{Santiago de Compostela}}
+    {Fast simulation of a forward detector at 50 and 100 TeV proton-proton
+		colliders}
+		{}
+    {% Description
+    \textit{V. Chobanova, D. Martínez Santos, C. Prouve, M. Romero Lamas}\\
+    We evaluate the performance of an LHCb-like detector using a fast simulation
+		of proton-proton collisions at center-of-mass energies of 50 and 100 TeV.
+		(...)
+    }
+  \entry{April 2020\\\footnotesize{Santiago de Compostela}}
+    {CP violation in beauty and charm at LHC$b$}
+		{}
+    {% Description
+    \textit{M. Romero Lamas}\\
+    The most recent results on CP violation in the decay, mixing and
+		interference of both b and c hadrons obtained by the LHCb Collaboration with
+		Run I and years 2015-2016 of Run II are presented. (...)}
+\end{entrylist}
+% }}}
+
+% Languages and IT {{{
+\begin{minipage}[t]{0.45\textwidth}
+	\vspace{-\baselineskip} % Required for vertically aligning minipages
+
+\cvsect{Languages}
+
+\emph{Hereinafter R is understood by reading, W by writing and S by oral
+communication.}%\\[-1mm]
+
+\begin{description}
+  \item[Spanish]  Native
+  \item[English]  R(excellent) · W(excellent) · S(very good)
+  \item[Portuguese]  R(good) · W (basic) · S (basic)
+  \item[Galician]  Native
+\end{description}
+%\begin{minipage}[t]{0.45\textwidth}
+%	\vspace{-\baselineskip}
+%	
+%	\begin{tabular}{lll}
+%	\textbf{Spanish} & \,\,\,\, & Native\\
+%	%\textbf{French} & \,\,\,\, & R(basic) · W(rudimentary) · S(rudimentary)\\
+%	\textbf{Galician} & \,\,\,\, & Native
+%	\end{tabular}
+%\end{minipage}
+%\hfill
+%\begin{minipage}[t]{0.45\textwidth}
+%	\vspace{-\baselineskip}
+%	
+%	\begin{tabular}{lll}
+%	\textbf{English} & \,\,\,\, & R(excellent) · W(excellent) · S(very good)\\
+%	\textbf{Portuguese} & \,\,\,\, & R(good) · W (basic) · S (basic)\\
+%	\end{tabular}
+%\end{minipage}
+\end{minipage}
+%
+\hfill
+%
+\begin{minipage}[t]{0.5\textwidth}
+	\vspace{-\baselineskip} % Required for vertically aligning minipages
+
+\cvsect{IT skills}
+
+\emph{I am a unix-like systems user, who loves Vim to edit code and avoids using
+the mouse}
+
+\begin{description}
+  \item%
+	  [Programming languages]
+	  Python (excellent),
+	  CUDA-C (very good), OpenCL (very good), C (good), C++ (good),
+	  Fortran 90 (basic)
+  \item%
+	  [Statistical analysis tools]
+		ROOT, RooFit, Hydra
+  \item
+	  [Subject--Specific]
+		Matlab (excellent), Mathematica (excellent),
+		Origin, LabView, COMSOL
+  \item
+	  [Markup languages]
+	  \LaTeX\, (excellent)
+\end{description}
+\end{minipage}
+
+% }}}
+
+% Additional information {{{
+% \begin{minipage}[t]{1\textwidth}
+% 	\vspace{-\baselineskip} % Required for vertically aligning minipages
+% 	
+% 	\cvsect{Hobbies}
+% 	
+% 	I love running, rowing and playing paddles on the beach. I like reading 
+% 	Wikipedia articles learning about random stuff. I enjoy going out with friends
+% 	and tasting wines from all over the world.
+% \end{minipage}
+%\hfill
+%\begin{minipage}[t]{0.45\textwidth}
+%	\vspace{-\baselineskip} % Required for vertically aligning minipages
+%	
+%	\cvsect{Non profit}
+%	
+%	I help...
+%\end{minipage}
+% }}}
+
+
+\end{document}
+
+
+% vim: ft=tex fdm=marker ts=2 sw=2 sts=2 sr noet
